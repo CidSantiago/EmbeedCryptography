@@ -29,7 +29,7 @@ def doRSA(arch = 'msg2.txt', key_size = 2048):
         FILE.close()
     
     total = []
-    while (len(total) < 30):
+    while (len(total) < 100):
         t = 0
         for b in  buffer:
             t = t + rsa_code2(key_size, b)

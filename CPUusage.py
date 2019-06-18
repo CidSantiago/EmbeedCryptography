@@ -83,7 +83,8 @@ def cpuusage_main(title):
       file.close()
       sys.exit(0)
 
-title = input('Coloque o nome do arquivo aqui')
+title = input('Coloque o nome do arquivo aqui:\n')
 title = title + '.txt'
-
+print('\nArquivo '+title+ ' criado.\n')
+print('Rodando...')
 cpuusage_main(title)

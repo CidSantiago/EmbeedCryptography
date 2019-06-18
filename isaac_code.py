@@ -213,7 +213,7 @@ def doISAAC(arch = 'msg2.txt'):
     buffer = []
     for line in message:
     	buffer = buffer + [line]
-    while (len(total) < 30):
+    while (len(total) < 100):
     	t = isaac_code(message = line)
     	total.append(t)
     return s.mean(total)

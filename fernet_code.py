@@ -43,7 +43,7 @@ def doFernet(arch = 'msg2.txt'):
 	buffer = []
 	for line in message:
 		buffer = buffer + [line]
-	while (len(total) < 30):
+	while (len(total) < 100):
 		t = fernet_code(message = line.encode())
 		total.append(t)
 	return s.mean(total)
